@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marielle</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Encabezado -->
+    <header class="header">
+        <nav class="nav">
+            <img class= "logo" src="imagenes/logo.png" >
+            <a href="Index.html">Inicio
+
+            </a>
+            <a href="SkincareProductos.html">Skincare</a>
+            <a href="MakeUpProductos.html">Maquillaje</a>
+            <a href="HairCareProducto.html" >Haircare </a>
+            <a href="ToolsProducto.html">Herramientas</a>
+            <a href="sobreNosotros.html">Sobre Nosotros</a>
+            <a href="login.html">Login</a>
+             <!-- Enlace para el carrito -->
+             <a href="carrito.html" class="cart-link">
+                <img src="imagenes/icon/cart-svgrepo-com.svg" alt="Carrito" class="cart-icon">
+              </a>
+        </nav>
+    </header>
+    <div class="page-separator">
+        <img src="imagenes/photo_5044252924250795067_y.jpg" alt="Separator"> </div>
+
+
+    <!-- Sección de categorías con enlaces a productos -->
+    <!-- Sección de Categorías -->
+<section class="categories">
+    <div class="category-grid">
+        <div class="category">
+            <a href="#skincare-products">               
+                <h2>Skincare</h2>
+                <img src="imagenes/icon/008-cleanser-1.svg" alt="Cleanser" class="iconoDiv">
+            </a>
+        </div>
+        <div class="category">
+            <a href="#makeup-products">
+                <h2>Maquillaje</h2>
+                <img src="imagenes/icon/042-powder.svg" alt="Cleanser" class="iconoDiv">
+            </a>
+        </div>
+        <div class="category">
+            <a href="#haircare-products">
+            <h2>Haircare</h2>
+            <img src="imagenes/icon/014-curling.svg" alt="Cleanser" class="iconoDiv">
+            </a>
+        </div>
+        <div class="category">
+            <a href="#tools-products">
+                <h2>Herramientas</h2>
+                <img src="imagenes/icon/032-brushes.svg" alt="Cleanser" class="iconoDiv">
+            </a>
+        </div>
+    </div>
+</section>
+
+    <!-- Productos de cada categoría -->
+
+     <!-- skincare -->
+    <section id="skincare-products" class="product-section">
+        <h2>Skincare</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="imagenes/skinCare/beauty-of-jeons-tonico.jpg.webp" alt="Product 1">
+                <h3>Tonico</h3>
+                <h4>Beauty of Joseon</h4>
+                <p>250 BS.</p>
+                <input type="number" min="1" max="5" value="1" class="cantidad-producto">
+                <button onclick="addToCart(this)" data-nombre="Tonico" data-precio="250">Añadir al carrito</button>
+            </div>
+        
+            <div class="product-card">
+                <img src="imagenes/skinCare/beauty-of-jeons-water-serum.jpg.webp" alt="Product 2">
+                <h3>Serum</h3>
+                <h4>Beauty of Joseon</h4>
+                <p>150 BS.</p>
+                <input type="number" min="1" max="5" value="1" class="cantidad-producto">
+                <button onclick="addToCart(this)" data-nombre="Serum" data-precio="150">Añadir al carrito</button>
+            </div>
+        
+            <div class="product-card">
+                <img src="imagenes/skinCare/beauty-of-jeons-crema.jpg.webp" alt="Product 3">
+                <h3>Protector Solar 50pf</h3>
+                <h4>Beauty of Joseon</h4>
+                <p>190 BS.</p>
+                <input type="number" min="1" max="5" value="1" class="cantidad-producto">
+                <button onclick="addToCart(this)" data-nombre="Protector Solar 50pf" data-precio="190">Añadir al carrito</button>
+            </div>
+        
+            <div class="product-card">
+                <img src="imagenes/skinCare/Beauty-of-Joseon-REVIVE-EYE-SERUM-30ML-2.jpg.webp" alt="Product 4">
+                <h3>Serum de Ojos</h3>
+                <h4>Beauty of Joseon</h4>
+                <p>140 BS.</p>
+                <input type="number" min="1" max="5" value="1" class="cantidad-producto">
+                <button onclick="addToCart(this)" data-nombre="Serum de Ojos" data-precio="140">Añadir al carrito</button>
+            </div>
+        
+        </div>
+    </section>
+
+<!--maquillaje-->
+    <section id="makeup-products" class="product-section">
+        <h2>Maquillaje</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="imagenes/MakeUp/sheglam-corrector-ACORN.jpg.webp" alt="Product 1">
+                <h3>Corrector</h3>
+                <h4>Sheglam</h4>
+                <p>125 BS.</p>
+                <input type="number" min="1" max="5" value="1" class="cantidad-producto">
+                <button onclick="addToCart(this)" data-nombre="Corrector" data-precio="125">Añadir al carrito</button>
+            </div>
+            
+            <div class="product-card">
+                <img src="imagenes/MakeUp/sheglam-base.jpg.webp" alt="Product 2">
+                <h3>Base Mate</h3>
+                <h4>Sheglam</h4>
+                <p>155 BS.</p>
+                <input type="number" min="1" max="5" value="1" class="cantidad-producto">
+                <button onclick="addToCart(this)" data-nombre="Base Mate" data-precio="155">Añadir al carrito</button>
+            </div>
+            
+            <div class="product-card">
+                <img src="imagenes/MakeUp/Maybelline-corrector.jpg.webp" alt="Product 3">
+                <h3>Corrector</h3>
+                <h4>Maybelline</h4>
+                <p>145 BS.</p>
+                <input type="number" min="1" max="5" value="1" class="cantidad-producto">
+                <button onclick="addToCart(this)" data-nombre="Corrector" data-precio="145">Añadir al carrito</button>
+            </div>
+            
+            <div class="product-card">
+                <img src="imagenes/MakeUp/Maybelline-polvo232-golden-caramel.jpg.webp" alt="Product 4">
+                <h3>Polvo SUPER STAY</h3>
+                <h4>Maybelline</h4>
+                <p>125 BS.</p>
+                <input type="number" min="1" max="5" value="1" class="cantidad-producto">
+                <button onclick="addToCart(this)" data-nombre="Polvo SUPER STAY" data-precio="125">Añadir al carrito</button>
+            </div>
+           
+        </div>
+    </section>
+
+    <section id="haircare-products" class="product-section">
+        <h2>Haircare</h2>
+        <div class="product-grid">
+        
+              
+            <div class="product-card">
+                <img src="imagenes/hairCare/garnier-Shampoo-aloevera.jpg.webp" alt="Mascarilla Reparadora">
+                <h3>Hair food aloe vera shampoo</h3>
+                <h4>Garnier</h4>
+                <p>Bs 55</p>
+                <input type="number" min="1" max="5" value="1" class="cantidad-producto">
+                <button onclick="addToCart(this)" data-nombre="Hair food aloe vera shampoo" data-precio="55">Añadir al carrito</button>
+            </div>
+            
+            <div class="product-card">
+                <img src="imagenes/hairCare/garnier_crema-para-peinar-cacao.jpg.webp" alt="Crema para Peinar">
+                <h3>Hair food manteca de cacao crema para peinar</h3>
+                <h4>Garnier</h4>
+                <p>Bs 55</p>
+                <input type="number" min="1" max="5" value="1" class="cantidad-producto">
+                <button onclick="addToCart(this)" data-nombre="Hair food manteca de cacao crema para peinar" data-precio="55">Añadir al carrito</button>
+            </div>
+            
+            <div class="product-card">
+                <img src="imagenes/hairCare/Loreal-Oleo-Extraordinario-Nutricion-Universal-100-ml.jpg.webp" alt="Óleo Extraordinario">
+                <h3>Óleo Extraordinario</h3>
+                <h4>Loreal</h4>
+                <p>Bs 95</p>
+                <input type="number" min="1" max="5" value="1" class="cantidad-producto">
+                <button onclick="addToCart(this)" data-nombre="Óleo Extraordinario" data-precio="95">Añadir al carrito</button>
+            </div>
+            
+            <div class="product-card">
+                <img src="imagenes/hairCare/villa-verde-tonico.jpg.webp" alt="Tónico de Romero">
+                <h3>Tónico de Romero 60ml</h3>
+                <h4>Villa Verde</h4>
+                <p>Bs 25</p>
+                <input type="number" min="1" max="5" value="1" class="cantidad-producto">
+                <button onclick="addToCart(this)" data-nombre="Tónico de Romero 60ml" data-precio="25">Añadir al carrito</button>
+            </div>
+        </div>
+    </section>
+
+       <!-- Herramientas -->
+       <section id="tools-products" class="product-section">
+        <h2>Herramientas</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="imagenes/Tools/Set-de-11-brochas-de-maquillaje-BH-Cosmetics-Pink-a-Dot-Pink-a-Dot.jpg.webp" alt="Plancha de Cabello">
+                <h3>Juego de brochas</h3>
+                <h4>BH Cosmetics</h4>
+                <p>90 BS.</p>
+                <input type="number" min="1" max="5" value="1" class="cantidad-producto">
+                <button onclick="addToCart(this)" data-nombre="Juego de brochas" data-precio="90">Añadir al carrito</button>
+            </div>
+            <div class="product-card">
+                <img src="imagenes/Tools/Set-8-de-brochas-de-maquillaje-bh-cosmetics-iluminacion-juego-de-brochas-de-8-piezas.jpg.webp" alt="Esponja de Maquillaje">
+                <h3>Illuminate de Ashley Tisdale</h3>
+                <h4>BH Cosmetics</h4>
+                <p>120 BS.</p>
+                <input type="number" min="1" max="5" value="1" class="cantidad-producto">
+                <button onclick="addToCart(this)" data-nombre="Illuminate de Ashley Tisdale" data-precio="120">Añadir al carrito</button>
+            </div>
+            <div class="product-card">
+                <img src="imagenes/Tools/macrilan-pegamento-blanco.jpg.webp" alt="Rizador de Cabello">
+                <h3>Pegamento para pestañas</h3>
+                <h4>Macrilan</h4>
+                <p>30 BS.</p>
+                <input type="number" min="1" max="5" value="1" class="cantidad-producto">
+                <button onclick="addToCart(this)" data-nombre="Pegamento para pestañas" data-precio="30">Añadir al carrito</button>
+            </div>
+            <div class="product-card">
+                <img src="imagenes/Tools/esponja-essence12-1.jpg.webp" alt="Secador de Cabello">
+                <h3>MAKEUP AND BAKING SPONGE</h3>
+                <h4>Essence</h4>
+                <p>35 BS.</p>
+                <input type="number" min="1" max="5" value="1" class="cantidad-producto">
+                <button onclick="addToCart(this)" data-nombre="MAKEUP AND BAKING SPONGE" data-precio="35">Añadir al carrito</button>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Carrito de compras -->
+    <script src="carrito.js"></script>
+       
+   <!-- Sección de Contacto -->
+   <section class="contact">
+    <div class="container">
+        <h2>Contáctanos</h2>
+        <p>Estamos aquí para ayudarte y resolver cualquier duda.</p>
+        <p>¡Conéctate con nosotros a través de nuestras redes sociales o visita nuestra tienda!</p>
+        
+        <div class="social-links">
+                          
+
+            <a href="https://www.instagram.com/av_mar_08/?hl=es" target="_blank" class="social-link">
+                <img src="imagenes/icon/instagram-svgrepo-com.svg" alt="Instagram" class="social-icon"> Instagram
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=100009870162029" target="_blank" class="social-link">
+                <img src="imagenes/icon/facebook-svgrepo-com.svg" alt="Facebook" class="social-icon"> Facebook
+            </a>
+            <a href="https://www.linkedin.com/in/mariel-andrea-vargas-flores-18972b2a9" target="_blank" class="social-link">
+                <img src="imagenes/icon/linkedin-svgrepo-com.svg" alt="LinkedIn" class="social-icon"> LinkedIn
+            </a>
+        </div>
+    </div>
+</section>
+
+ <!-- Footer -->
+ <footer class="footer">
+    <p>&copy; 2024 Marielle. Todos los derechos reservados.</p>
+</footer>
+   
+
+</body>
+</html>

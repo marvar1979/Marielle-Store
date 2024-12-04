@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Herramientas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Encabezado -->
+    <header class="header">
+        <nav class="nav">
+            <img class= "logo" src="dsdsd.pnj">
+            <a href="Index.html">Inicio</a>
+            <a href="SkincareProductos.html">Skincare</a>
+            <a href="MakeUpProductos.html">Maquillaje</a>
+            <a href="HairCareProducto.html">Haircare</a>
+            <a href="ToolsProducto.html">Herramientas</a>
+            <a href="sobreNosotros.html">Sobre Nosotros</a>
+            <a href="login.html">Login</a>
+            <a href="carrito.html">Carrito</a> <!-- Enlace para el carrito -->
+        </nav>
+    </header>
+    <div class="page-separator">
+        <img src="imagenes/photo_5044252924250795067_y.jpg" alt="Separator"> </div>
+
+  
+       <!-- Herramientas -->
+       <section id="tools-products" class="product-section">
+        <h2>Herramientas</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="imagenes/Tools/Sheglam_esponja-negra.jpg.webp" alt="Cepillo Facial">
+                <h3>Esponja de Maquillaje Multifacética</h3>
+                <h4>Sheglam</h4>
+                <p>20 BS.</p>
+                <input type="number" min="1" max="5" value="1" class="cantidad-producto">
+                <button onclick="addToCart(this)" data-nombre="Esponja de Maquillaje Multifacética" data-precio="20">Añadir al carrito</button>
+            </div>
+            <div class="product-card">
+                <img src="imagenes/Tools/Set-de-11-brochas-de-maquillaje-BH-Cosmetics-Pink-a-Dot-Pink-a-Dot.jpg.webp" alt="Plancha de Cabello">
+                <h3>Juego de brochas</h3>
+                <h4>BH Cosmetics</h4>
+                <p>90 BS.</p>
+                <input type="number" min="1" max="5" value="1" class="cantidad-producto">
+                <button onclick="addToCart(this)" data-nombre="Juego de brochas" data-precio="90">Añadir al carrito</button>
+            </div>
+            <div class="product-card">
+                <img src="imagenes/Tools/Set-8-de-brochas-de-maquillaje-bh-cosmetics-iluminacion-juego-de-brochas-de-8-piezas.jpg.webp" alt="Esponja de Maquillaje">
+                <h3>Illuminate de Ashley Tisdale</h3>
+                <h4>BH Cosmetics</h4>
+                <p>120 BS.</p>
+                <input type="number" min="1" max="5" value="1" class="cantidad-producto">
+                <button onclick="addToCart(this)" data-nombre="Illuminate de Ashley Tisdale" data-precio="120">Añadir al carrito</button>
+            </div>
+            <div class="product-card">
+                <img src="imagenes/Tools/macrilan-pegamento-blanco.jpg.webp" alt="Rizador de Cabello">
+                <h3>Pegamento para pestañas</h3>
+                <h4>Macrilan</h4>
+                <p>30 BS.</p>
+                <input type="number" min="1" max="5" value="1" class="cantidad-producto">
+                <button onclick="addToCart(this)" data-nombre="Pegamento para pestañas" data-precio="30">Añadir al carrito</button>
+            </div>
+            <div class="product-card">
+                <img src="imagenes/Tools/esponja-essence12-1.jpg.webp" alt="Secador de Cabello">
+                <h3>MAKEUP AND BAKING SPONGE</h3>
+                <h4>Essence</h4>
+                <p>35 BS.</p>
+                <input type="number" min="1" max="5" value="1" class="cantidad-producto">
+                <button onclick="addToCart(this)" data-nombre="MAKEUP AND BAKING SPONGE" data-precio="35">Añadir al carrito</button>
+            </div>
+        </div>
+    </section>
+   
+    <script src="carrito.js"></script>
+    <!-- Footer -->
+ <footer class="footer">
+    <p>&copy; 2024 Marielle. Todos los derechos reservados.</p>
+</footer>
+  
+
+</body>
+</html>

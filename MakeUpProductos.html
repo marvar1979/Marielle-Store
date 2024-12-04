@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+    <link link rel="stylesheet" href="style.css">
+</head>
+<body>
+      <!-- Encabezado -->
+      <header class="header">
+        <nav class="nav">
+            <img class= "logo" src="dsdsd.pnj">
+            <a href="Index.html">Inicio</a>
+            <a href="SkincareProductos.html">Skincare</a>
+            <a href="MakeUpProductos.html">Maquillaje</a>
+            <a href="HairCareProducto.html">Haircare</a>
+            <a href="ToolsProducto.html">Herramientas</a>
+            <a href="sobreNosotros.html">Sobre Nosotros</a>
+            <a href="login.html">Login</a>
+            <a href="carrito.html">Carrito</a> <!-- Enlace para el carrito -->
+        </nav>
+        </header>
+        <div class="page-separator">
+            <img src="imagenes/photo_5044252924250795067_y.jpg" alt="Separator"> </div>
+    
+    
+        <!-- Sección de categorías con enlaces a productos -->
+        <!-- Sección de Categorías -->
+   
+    
+         
+        <section id="makeup-products" class="product-section">
+            <h2>Maquillaje</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="imagenes/MakeUp/sheglam-corrector-ACORN.jpg.webp" alt="Product 1">
+                    <h3>Corrector</h3>
+                    <h4>Sheglam</h4>
+                    <p>125 BS.</p>
+                    <input type="number" min="1" max="5" value="1" class="cantidad-producto">
+                    <button onclick="addToCart(this)" data-nombre="Corrector" data-precio="125">Añadir al carrito</button>
+                </div>
+                
+                <div class="product-card">
+                    <img src="imagenes/MakeUp/sheglam-base.jpg.webp" alt="Product 2">
+                    <h3>Base Mate</h3>
+                    <h4>Sheglam</h4>
+                    <p>155 BS.</p>
+                    <input type="number" min="1" max="5" value="1" class="cantidad-producto">
+                    <button onclick="addToCart(this)" data-nombre="Base Mate" data-precio="155">Añadir al carrito</button>
+                </div>
+                
+                <div class="product-card">
+                    <img src="imagenes/MakeUp/Maybelline-corrector.jpg.webp" alt="Product 3">
+                    <h3>Corrector</h3>
+                    <h4>Maybelline</h4>
+                    <p>145 BS.</p>
+                    <input type="number" min="1" max="5" value="1" class="cantidad-producto">
+                    <button onclick="addToCart(this)" data-nombre="Corrector" data-precio="145">Añadir al carrito</button>
+                </div>
+                
+                <div class="product-card">
+                    <img src="imagenes/MakeUp/Maybelline-polvo232-golden-caramel.jpg.webp" alt="Product 4">
+                    <h3>Polvo SUPER STAY</h3>
+                    <h4>Maybelline</h4>
+                    <p>125 BS.</p>
+                    <input type="number" min="1" max="5" value="1" class="cantidad-producto">
+                    <button onclick="addToCart(this)" data-nombre="Polvo SUPER STAY" data-precio="125">Añadir al carrito</button>
+                </div>
+                
+                <div class="product-card">
+                    <img src="imagenes/MakeUp/Maybelline-labialMB15.jpg.webp" alt="Product 5">
+                    <h3>Labial Sky Pink</h3>
+                    <h4>Maybelline</h4>
+                    <p>95 BS.</p>
+                    <input type="number" min="1" max="5" value="1" class="cantidad-producto">
+                    <button onclick="addToCart(this)" data-nombre="Labial Sky Pink" data-precio="95">Añadir al carrito</button>
+                </div>
+                
+                <div class="product-card">
+                    <img src="imagenes/MakeUp/Maybelline-maskara-sky-hight-black123.jpg.webp" alt="Product 6">
+                    <h3>Rímel</h3>
+                    <h4>Maybelline</h4>
+                    <p>135 BS.</p>
+                    <input type="number" min="1" max="5" value="1" class="cantidad-producto">
+                    <button onclick="addToCart(this)" data-nombre="Rímel" data-precio="135">Añadir al carrito</button>
+                </div>
+                
+                <div class="product-card">
+                    <img src="imagenes/MakeUp/ESSENCE-BASE-FRES-NUDE.jpg.webp" alt="Product 7">
+                    <h3>Base de Maquillaje</h3>
+                    <h4>Essence</h4>
+                    <p>105 BS.</p>
+                    <input type="number" min="1" max="5" value="1" class="cantidad-producto">
+                    <button onclick="addToCart(this)" data-nombre="Base de Maquillaje" data-precio="105">Añadir al carrito</button>
+                </div>
+                
+                <div class="product-card">
+                    <img src="imagenes/MakeUp/ESSENCE-wat-a-tint12345.jpg.webp" alt="Product 8">
+                    <h3>WHAT A TINT</h3>
+                    <h4>Essence</h4>
+                    <p>80 BS.</p>
+                    <input type="number" min="1" max="5" value="1" class="cantidad-producto">
+                    <button onclick="addToCart(this)" data-nombre="WHAT A TINT" data-precio="80">Añadir al carrito</button>
+                </div>
+                
+                <div class="product-card">
+                    <img src="imagenes/MakeUp/BC-sombra-nude-x-beauty123.jpg.webp" alt="Product 9">
+                    <h3>Paleta de Sombras</h3>
+                    <h4>Beauty Creations</h4>
+                    <p>120 BS.</p>
+                    <input type="number" min="1" max="5" value="1" class="cantidad-producto">
+                    <button onclick="addToCart(this)" data-nombre="Paleta de Sombras" data-precio="120">Añadir al carrito</button>
+                </div>
+                
+                
+            </div>
+        </section>
+        <script src="carrito.js"></script>
+    
+
+    <footer class="footer">
+        <p>&copy; 2024 Marielle. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

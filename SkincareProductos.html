@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos Skincare</title>
+    <link link rel="stylesheet" href="style.css">
+</head>
+<body>
+      <!-- Encabezado -->
+      <header class="header">
+        <nav class="nav">
+            <img class= "logo" src="dsdsd.pnj">
+            <a href="Index.html">Inicio</a>
+            <a href="SkincareProductos.html">Skincare</a>
+            <a href="MakeUpProductos.html">Maquillaje</a>
+            <a href="HairCareProducto.html">Haircare</a>
+            <a href="ToolsProducto.html">Herramientas</a>
+            <a href="sobreNosotros.html">Sobre Nosotros</a>
+            <a href="login.html">Login</a>
+            <a href="carrito.html">Carrito</a> <!-- Enlace para el carrito -->
+        </nav>
+        </header>
+        <div class="page-separator">
+            <img src="imagenes/photo_5044252924250795067_y.jpg" alt="Separator"> </div>
+    
+    
+        <!-- Sección de categorías con enlaces a productos -->
+        <!-- Sección de Categorías -->
+    
+    
+        <!-- Productos de cada categoría -->
+        <section id="skincare-products" class="product-section">
+            <h2>Skincare</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="imagenes/skinCare/beauty-of-jeons-tonico.jpg.webp" alt="Product 1">
+                    <h3>Tonico</h3>
+                    <h4>Beauty of Joseon</h4>
+                    <p>250 BS.</p>
+                    <input type="number" min="1" max="5" value="1" class="cantidad-producto">
+                    <button onclick="addToCart(this)" data-nombre="Tonico" data-precio="250">Añadir al carrito</button>
+                </div>
+            
+                <div class="product-card">
+                    <img src="imagenes/skinCare/beauty-of-jeons-water-serum.jpg.webp" alt="Product 2">
+                    <h3>Serum</h3>
+                    <h4>Beauty of Joseon</h4>
+                    <p>150 BS.</p>
+                    <input type="number" min="1" max="5" value="1" class="cantidad-producto">
+                    <button onclick="addToCart(this)" data-nombre="Serum" data-precio="150">Añadir al carrito</button>
+                </div>
+            
+                <div class="product-card">
+                    <img src="imagenes/skinCare/beauty-of-jeons-crema.jpg.webp" alt="Product 3">
+                    <h3>Protector Solar 50pf</h3>
+                    <h4>Beauty of Joseon</h4>
+                    <p>190 BS.</p>
+                    <input type="number" min="1" max="5" value="1" class="cantidad-producto">
+                    <button onclick="addToCart(this)" data-nombre="Protector Solar 50pf" data-precio="190">Añadir al carrito</button>
+                </div>
+            
+                <div class="product-card">
+                    <img src="imagenes/skinCare/Beauty-of-Joseon-REVIVE-EYE-SERUM-30ML-2.jpg.webp" alt="Product 4">
+                    <h3>Serum de Ojos</h3>
+                    <h4>Beauty of Joseon</h4>
+                    <p>140 BS.</p>
+                    <input type="number" min="1" max="5" value="1" class="cantidad-producto">
+                    <button onclick="addToCart(this)" data-nombre="Serum de Ojos" data-precio="140">Añadir al carrito</button>
+                </div>
+            
+                <div class="product-card">
+                    <img src="imagenes/skinCare/BEAUTY-OF-JOSEON-CLEASING1.jpg.webp" alt="Product 5">
+                    <h3>Cleansing Oil</h3>
+                    <h4>Beauty of Joseon</h4>
+                    <p>270 BS.</p>
+                    <input type="number" min="1" max="5" value="1" class="cantidad-producto">
+                    <button onclick="addToCart(this)" data-nombre="Cleansing Oil" data-precio="270">Añadir al carrito</button>
+                </div>
+            
+                <div class="product-card">
+                    <img src="imagenes/skinCare/REFRESING-MASK-BEAUTY-OF-JOSEON.jpg.webp" alt="Product 6">
+                    <h3>Mascarilla</h3>
+                    <h4>Beauty of Joseon</h4>
+                    <p>210 BS.</p>
+                    <input type="number" min="1" max="5" value="1" class="cantidad-producto">
+                    <button onclick="addToCart(this)" data-nombre="Mascarilla" data-precio="210">Añadir al carrito</button>
+                </div>
+            
+                <div class="product-card">
+                    <img src="imagenes/skinCare/cerave-gel-limpiador-foaming-cerave3.jpg.webp" alt="Product 7">
+                    <h3>Gel Limpiador</h3>
+                    <h4>CeraVe</h4>
+                    <p>310 BS.</p>
+                    <input type="number" min="1" max="5" value="1" class="cantidad-producto">
+                    <button onclick="addToCart(this)" data-nombre="Gel Limpiador" data-precio="310">Añadir al carrito</button>
+                </div>
+            
+                <div class="product-card">
+                    <img src="imagenes/skinCare/CeraVe-Locion-hidratante.jpg.webp" alt="Product 8">
+                    <h3>Locion Hidratante</h3>
+                    <h4>CeraVe</h4>
+                    <p>290 BS.</p>
+                    <input type="number" min="1" max="5" value="1" class="cantidad-producto">
+                    <button onclick="addToCart(this)" data-nombre="Locion Hidratante" data-precio="290">Añadir al carrito</button>
+                </div>
+            
+                <div class="product-card">
+                    <img src="imagenes/skinCare/LRP_Jabonpurifiant34555.jpg.webp" alt="Product 9">
+                    <h3>Gel limpiador</h3>
+                    <h4>La Roche Posay</h4>
+                    <p>290 BS.</p>
+                    <input type="number" min="1" max="5" value="1" class="cantidad-producto">
+                    <button onclick="addToCart(this)" data-nombre="Gel limpiador" data-precio="290">Añadir al carrito</button>
+                </div>
+            
+                <div class="product-card">
+                    <img src="imagenes/skinCare/LRP-effaclar-serum-la-roche.jpg.webp" alt="Product 10">
+                    <h3>Serum</h3>
+                    <h4>La Roche Posay</h4>
+                    <p>350 BS.</p>
+                    <input type="number" min="1" max="5" value="1" class="cantidad-producto">
+                    <button onclick="addToCart(this)" data-nombre="Serum" data-precio="350">Añadir al carrito</button>
+                </div>
+            
+                <div class="product-card">
+                    <img src="imagenes/skinCare/LRP-cicaplast-baume-la-roche-posay.jpg.webp" alt="Product 11">
+                    <h3>Cicaplast</h3>
+                    <h4>La Roche Posay</h4>
+                    <p>230 BS.</p>
+                    <input type="number" min="1" max="5" value="1" class="cantidad-producto">
+                    <button onclick="addToCart(this)" data-nombre="Cicaplast" data-precio="230">Añadir al carrito</button>
+                </div>
+            
+                <div class="product-card">
+                    <img src="imagenes/skinCare/LRP-ANTHELIOS-UV-400.jpg.webp" alt="Product 12">
+                    <h3>Protector Solar spf50+</h3>
+                    <h4>La Roche Posay</h4>
+                    <p>310 BS.</p>
+                    <input type="number" min="1" max="5" value="1" class="cantidad-producto">
+                    <button onclick="addToCart(this)" data-nombre="Protector Solar spf50+" data-precio="310">Añadir al carrito</button>
+                </div>
+            
+                <div class="product-card">
+                    <img src="imagenes/skinCare/avene-agua-termal.jpg.webp" alt="Product 13">
+                    <h3>Agua Thermal Spray</h3>
+                    <h4>Avené</h4>
+                    <p>150 BS.</p>
+                    <input type="number" min="1" max="5" value="1" class="cantidad-producto">
+                    <button onclick="addToCart(this)" data-nombre="Agua Thermal Spray" data-precio="150">Añadir al carrito</button>
+                </div>
+            
+                <div class="product-card">
+                    <img src="imagenes/skinCare/eucerin-antipigment-dia.jpg.webp" alt="Product 14">
+                    <h3>Crema Anti-Pigment </h3>
+                    <h4>Eucerin</h4>
+                    <p>310 BS.</p>
+                    <input type="number" min="1" max="5" value="1" class="cantidad-producto">
+                    <button onclick="addToCart(this)" data-nombre="Crema Anti-Pigment" data-precio="310">Añadir al carrito</button>
+                </div>
+            
+                <div class="product-card">
+                    <img src="imagenes/skinCare/eucerin-PHOTOAGING-CONTROL-TINTED.jpg.webp" alt="Product 15">
+                    <h3>Protector Solar FPS 50+</h3>
+                    <h4>Eucerin</h4>
+                    <p>225 BS.</p>
+                    <input type="number" min="1" max="5" value="1" class="cantidad-producto">
+                    <button onclick="addToCart(this)" data-nombre="Protector Solar FPS 50+" data-precio="225">Añadir al carrito</button>
+                </div>
+            </div>            
+        </section>
+        <script src="carrito.js"></script>
+    <footer class="footer">
+        <p>&copy; 2024 Marielle. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

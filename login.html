@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link link rel="stylesheet" href="style.css">
+   
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <img class= "logo" src="dsdsd.pnj">
+            <a href="Index.html">Inicio</a>
+            <a href="SkincareProductos.html">Skincare</a>
+            <a href="MakeUpProductos.html">Maquillaje</a>
+            <a href="HairCareProducto.html">Haircare</a>
+            <a href="ToolsProducto.html">Herramientas</a>
+            <a href="sobreNosotros.html">Sobre Nosotros</a>
+            <a href="login.html">Login</a>
+            <a href="carrito.html">Carrito</a> 
+        </nav>
+        </header>
+    
+        <section id="login" class="login-section">
+            <h2>Iniciar sesión</h2>
+            <br>
+            <form id="loginForm">
+                <label for="username">Correo electrónico:</label>
+                <input type="email" id="username" name="username"  required>
+                
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" name="password"required>
+                
+                <button type="submit">Iniciar sesión</button>
+            </form>
+            <div id="welcomeMessage" style="margin-top: 20px; font-size: 1.2rem; color: #f691b5 ;"></div>
+        </section>
+        
+    <footer class="footer">
+        <p>&copy; 2024 Marielle. Todos los derechos reservados.</p>
+    </footer>
+    <script>
+        document.getElementById("loginForm").addEventListener("submit", function(event) {
+            event.preventDefault(); 
+            
+            const emailInput = document.getElementById("username").value;
+            const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; 
+
+            if (!emailPattern.test(emailInput)) {
+                alert("Por favor, introduce un correo electrónico válido.");
+                return;
+            }
+            
+        
+            const welcomeMessage = document.getElementById("welcomeMessage");
+            welcomeMessage.textContent = `¡Bienvenido, ${emailInput}!`;
+            
+            this.reset(); 
+        });
+    </script>
+    
+</body>
+</html>

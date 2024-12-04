@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito</title>
+    <link rel="stylesheet" href="CSScarrito.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <img class= "logo" src="dsdsd.pnj">
+            <a href="Index.html">Inicio</a>
+            <a href="SkincareProductos.html">Skincare</a>
+            <a href="MakeUpProductos.html">Maquillaje</a>
+            <a href="HairCareProducto.html">Haircare</a>
+            <a href="ToolsProducto.html">Herramientas</a>
+            <a href="sobreNosotros.html">Sobre Nosotros</a>
+            <a href="login.html">Login</a>
+            <a href="carrito.html">Carrito</a> <!-- Enlace para el carrito -->
+        </nav>
+        </header>
+        <div class="page-separator">
+            <img src="imagenes/photo_5044252924250795067_y.jpg" alt="Separator"> </div>
+    
+    
+    <section class="C-cart-section">
+        <h2>Carrito de Compras</h2>
+        <br>
+        <ul id="C-cart-items">
+            <!-- Los productos añadidos al carrito aparecerán aquí -->
+        </ul>
+        <br>
+        <p>Total: $<span id="total">0</span></p>
+        <button id="checkout" onclick="checkout()">Proceder al pago</button>
+    </section>
+    <script src="carrito.js"></script>
+    <script>
+        window.onload = cargarCarrito;
+    </script>
+    <footer class="C-footer">
+        <p>&copy; 2024 Marielle. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

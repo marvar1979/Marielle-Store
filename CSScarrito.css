@@ -1,0 +1,131 @@
+/* Resetear márgenes y paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fuente global y fondo */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* Encabezado */
+.header {
+    background-color: hsl(339, 81%, 85%); /* Rosa claro */
+    padding: 10px;
+    text-align: center;
+    position: fixed;  /* Fija el header en la parte superior */
+    top: 0;  /* Alinea el header en la parte superior */
+    left: 0;
+    width: 100%;  /* Asegura que ocupe todo el ancho */
+    z-index: 1000; 
+}
+
+.header .logo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Alinea el logo a la izquierda */
+    gap: 10px;
+}
+
+.header .logo img {
+    max-width: 50px; /* Ajusta el tamaño del logo */
+    height: auto;
+}
+
+.header h1 {
+    font-size: 2rem;
+    color: #333;
+}
+
+/* Menú de navegación */
+.nav {
+    margin-top: 15px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 15px;
+    margin: 0 10px;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.page-separator {
+    width: 100%;
+    height: auto;
+}
+
+
+/* Sección del carrito de compras */
+.C-cart-section {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.C-cart-section h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Lista de productos en el carrito */
+#C-cart-items {
+    list-style-type: none;
+    margin: 20px 0;
+}
+
+#C-cart-items li {
+    padding: 10px;
+    font-size: 1.1rem;
+    color: #555;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Total del carrito */
+.C-cart-section p {
+    font-size: 1.3rem;
+    color: #333;
+    margin: 15px 0;
+}
+
+/* Botón de pago */
+.C-cart-section button {
+    background-color: #f8bbd0; /* Rosa claro */
+    border: none;
+    padding: 12px 20px;
+    border-radius: 30px;
+    color: black;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.C-cart-section button:hover {
+    background-color: #F5A3C7; /* Rosa más oscuro */
+}
+
+/* Pie de página del carrito */
+.C-footer {
+    background-color: #0d020b;
+    color: #f8bbd0;
+    padding: 15px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.C-footer p {
+    font-size: 1rem;
+}
+
+

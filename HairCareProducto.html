@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marielle</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Encabezado -->
+    <header class="header">
+        <nav class="nav">
+           <div><img class= "logo" src="dsdsd.pnj"></div> 
+           <a href="Index.html">Inicio</a>
+            <a href="SkincareProductos.html">Skincare</a>
+            <a href="MakeUpProductos.html">Maquillaje</a>
+            <a href="HairCareProducto.html">Haircare</a>
+            <a href="ToolsProducto.html">Herramientas</a>
+            <a href="sobreNosotros.html">Sobre Nosotros</a>
+            <a href="login.html">Login</a>
+            <a href="carrito.html">Carrito</a> <!-- Enlace para el carrito -->
+        </nav>
+    </header>
+    <div class="page-separator">
+        <img src="imagenes/photo_5044252924250795067_y.jpg" alt="Separator"> </div>
+
+    <section id="haircare-products" class="product-section">
+        <h2>Haircare</h2>
+        <div class="product-grid">
+        
+            <div class="product-card">
+                <img src="imagenes/hairCare/garnier_kit-de-sandia.jpg.webp" alt="Mascarilla Reparadora">
+                <h3>Hair food sandia rutina</h3>
+                <h4>Garnier</h4>
+                <p>Bs 169</p>
+                <input type="number" min="1" max="5" value="1" class="cantidad-producto">
+                <button onclick="addToCart(this)" data-nombre="Hair food sandia rutina" data-precio="169">Añadir al carrito</button>
+            </div>
+            
+            <div class="product-card">
+                <img src="imagenes/hairCare/garner kit-de-banana.jpg.webp" alt="Aceite para el Cabello">
+                <h3>Hair food banana rutina</h3>
+                <h4>Garnier</h4>
+                <p>Bs 169</p>
+                <input type="number" min="1" max="5" value="1" class="cantidad-producto">
+                <button onclick="addToCart(this)" data-nombre="Hair food banana rutina" data-precio="169">Añadir al carrito</button>
+            </div>
+            
+            <div class="product-card">
+                <img src="imagenes/hairCare/garnier-Shampoo-aloevera.jpg.webp" alt="Mascarilla Reparadora">
+                <h3>Hair food aloe vera shampoo</h3>
+                <h4>Garnier</h4>
+                <p>Bs 55</p>
+                <input type="number" min="1" max="5" value="1" class="cantidad-producto">
+                <button onclick="addToCart(this)" data-nombre="Hair food aloe vera shampoo" data-precio="55">Añadir al carrito</button>
+            </div>
+            
+            <div class="product-card">
+                <img src="imagenes/hairCare/garnier_crema-para-peinar-cacao.jpg.webp" alt="Crema para Peinar">
+                <h3>Hair food manteca de cacao crema para peinar</h3>
+                <h4>Garnier</h4>
+                <p>Bs 55</p>
+                <input type="number" min="1" max="5" value="1" class="cantidad-producto">
+                <button onclick="addToCart(this)" data-nombre="Hair food manteca de cacao crema para peinar" data-precio="55">Añadir al carrito</button>
+            </div>
+            
+            <div class="product-card">
+                <img src="imagenes/hairCare/Loreal-Oleo-Extraordinario-Nutricion-Universal-100-ml.jpg.webp" alt="Óleo Extraordinario">
+                <h3>Óleo Extraordinario</h3>
+                <h4>Loreal</h4>
+                <p>Bs 95</p>
+                <input type="number" min="1" max="5" value="1" class="cantidad-producto">
+                <button onclick="addToCart(this)" data-nombre="Óleo Extraordinario" data-precio="95">Añadir al carrito</button>
+            </div>
+            
+            <div class="product-card">
+                <img src="imagenes/hairCare/villa-verde-tonico.jpg.webp" alt="Tónico de Romero">
+                <h3>Tónico de Romero 60ml</h3>
+                <h4>Villa Verde</h4>
+                <p>Bs 25</p>
+                <input type="number" min="1" max="5" value="1" class="cantidad-producto">
+                <button onclick="addToCart(this)" data-nombre="Tónico de Romero 60ml" data-precio="25">Añadir al carrito</button>
+            </div>
+            
+            <div class="product-card">
+                <img src="imagenes/hairCare/Spray-Para-Peinar-Ultra-Brillo-x150ml.jpg.webp" alt="Spray Para Peinar">
+                <h3>Spray Para Peinar</h3>
+                <h4>Biferdil</h4>
+                <p>Bs 65</p>
+                <input type="number" min="1" max="5" value="1" class="cantidad-producto">
+                <button onclick="addToCart(this)" data-nombre="Spray Para Peinar" data-precio="65">Añadir al carrito</button>
+            </div>
+            
+           
+        </div>
+    </section>
+    <script src="carrito.js"></script>
+ <!-- Footer -->
+ <footer class="footer">
+    <p>&copy; 2024 Marielle. Todos los derechos reservados.</p>
+</footer>
+  
+
+</body>
+</html>
